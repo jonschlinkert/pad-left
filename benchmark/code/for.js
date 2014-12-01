@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * for loop
+ */
+
 module.exports = function pad(val, amount) {
   for (var i = 0; i < amount; i++) {
     val = '0' + val;

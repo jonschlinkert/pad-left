@@ -2,24 +2,24 @@
 
 var repeat = require('repeat-string');
 
-module.exports = function padLeft(val, num, str) {
+module.exports = function padLeft(val, num) {
   var padding = '';
 
-  if (num <= 2 && !str) {
+  if (num <= 2) {
     padding = '00';
-  } else if (num <= 3 && !str) {
+  } else if (num <= 3) {
     padding = '000';
-  } else if (num <= 5 && !str) {
+  } else if (num <= 5) {
     padding = '00000';
-  } else if (num <= 25 && !str) {
+  } else if (num <= 25) {
     padding = '000000000000000000000000000';
-  } else if (num <= 50 && !str) {
+  } else if (num <= 50) {
     padding = '0000000000000000000000000000000000000000000000000000';
-  } else if (num <= 100 && !str) {
+  } else if (num <= 100) {
     padding = '000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000';
   } else {
-    return repeat(str || '0', num) + val;
+    return repeat('0', num) + val;
   }
 
-  return (padding + val).slice(num - val.length);
+  return (padding + val).substr(-num - val.length);
 };
