@@ -1,7 +1,7 @@
 {
   "name": "pad-left",
   "description": "Left pad a string with zeros or a specified string. Fastest implementation.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/pad-left",
   "author": {
     "name": "Jon Schlinkert",
@@ -36,7 +36,18 @@
     "glob": "^4.2.1",
     "mocha": "*",
     "repeating": "^1.1.0",
-    "should": "*"
+    "should": "*",
+    "template": "^0.4.1"
   },
-  "keywords": []
+  "keywords": [
+    "fill",
+    "left",
+    "pad",
+    "pad-left",
+    "padding",
+    "string",
+    "zero",
+    "zero-fill",
+    "zeros"
+  ]
 }
