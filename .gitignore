@@ -9,3 +9,4 @@ tmp
 TODO.md
 vendor
 **/staging/**
+*.DS_Store
