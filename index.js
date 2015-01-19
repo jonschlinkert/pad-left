@@ -1,7 +1,7 @@
 /*!
  * pad-left <https://github.com/jonschlinkert/pad-left>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014-2015, Jon Schlinkert.
  * Licensed under the MIT license.
  */
 
@@ -9,6 +9,6 @@
 
 var repeat = require('repeat-string');
 
-module.exports = function padLeft(val, num, str) {
-  return repeat(str || '0', num) + val;
+module.exports = function padLeft(str, num, ch) {
+  return repeat(ch || ' ', num) + str;
 };
