@@ -1,0 +1,18 @@
+*.sublime-*
+_gh_pages
+bower_components
+node_modules
+npm-debug.log
+temp
+test/actual
+tmp
+TODO.md
+vendor
+**/staging/**
+*.DS_Store
+
+
+# npmignore
+.*
+test.js
+benchmark
