@@ -1,7 +1,7 @@
 {
   "name": "pad-left",
   "description": "Left pad a string with zeros or a specified string. Fastest implementation.",
-  "version": "0.2.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/jonschlinkert/pad-left",
   "author": {
     "name": "Jon Schlinkert",
@@ -14,12 +14,10 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/pad-left/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/pad-left/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/pad-left/blob/master/LICENSE"
+  },
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -28,23 +26,23 @@
     "test": "mocha -R spec"
   },
   "dependencies": {
-    "repeat-string": "^0.2.2"
+    "repeat-string": "^1.3.0"
   },
   "devDependencies": {
     "benchmarked": "^0.1.3",
     "chalk": "^0.5.1",
-    "glob": "^4.2.1",
-    "mocha": "*",
-    "repeating": "^1.1.0",
-    "should": "*",
-    "template": "^0.4.1"
+    "glob": "^4.3.5",
+    "should": "^4.6.1"
   },
   "keywords": [
+    "align",
     "fill",
     "left",
     "pad",
     "pad-left",
+    "padded",
     "padding",
+    "spaces",
     "string",
     "zero",
     "zero-fill",
