@@ -1,10 +1,11 @@
 'use strict';
 
-module.exports = function pad(val, amount) {
-  var res = [val];
+module.exports = function pad(str, num, ch) {
+  ch = ch || ' ';
+  var res = [str];
 
-  while (amount--) {
-    res.unshift('0');
+  while (num--) {
+    res.unshift(ch);
   }
 
   return res.join('');

@@ -4,9 +4,13 @@
  * for loop
  */
 
-module.exports = function pad(val, amount) {
-  for (var i = 0; i < amount; i++) {
-    val = '0' + val;
+module.exports = function pad(str, num, ch) {
+  var res = '';
+  ch = ch || ' ';
+
+  for (var i = 0; i < num; i++) {
+    res += ch;
   }
-  return val;
+
+  return res + str;
 };

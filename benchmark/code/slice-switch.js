@@ -2,27 +2,34 @@
 
 var repeat = require('repeat-string');
 
-module.exports = function padLeft(val, num) {
+module.exports = function padLeft(str, num, ch) {
   var padding = '';
+  ch = ch || ' ';
 
-  // Breakpoints based on benchmarks
-  switch (true) {
-    case (num <= 5):
-      padding = '00000';
-      break;
-    case (num <= 25):
-      padding = '000000000000000000000000000';
-      break;
-    case (num <= 100):
-      padding = '000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000';
-      break;
-    case (num <= 200):
-      padding = '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000';
-      break;
-    case (num > 200):
-      return repeat('0', num) + val;
+  if (!ch) {
+    // Breakpoints based on benchmarks
+    switch (true) {
+      case (num <= 5):
+        padding = '     ';
+        break;
+
+      case (num <= 25):
+        padding = '                         ';
+        break;
+
+      case (num <= 100):
+        padding = '                                                                                                    ';
+        break;
+      case (num <= 200):
+        padding = '                                                                                                                                                                                                        ';
+        break;
+      case (num > 200):
+        return repeat((ch), num) + str;
+    }
+  } else {
+    return repeat((ch), num) + str;
   }
 
-  return (padding + val).slice(-num - val.length);
+  return (padding + str).slice(-num - str.length);
 };
 

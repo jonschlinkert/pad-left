@@ -10,9 +10,9 @@ var glob = require('glob');
  * Run to ensure that all fns return the same result.
  */
 
-var fixtures = glob.sync(__dirname + '/fixtures/10.js');
+var fixtures = glob.sync(__dirname + '/fixtures/de*10.js');
 
-glob.sync(__dirname + '/code/{repeating,_*}.js').forEach(function (fp) {
+glob.sync(__dirname + '/code/*.js').forEach(function (fp) {
   var fn = require(path.resolve(__dirname, 'code', fp));
   var name = path.basename(fp, path.extname(fp));
 

@@ -1,8 +1,11 @@
 'use strict';
 
-module.exports = function pad(res, amount) {
-  while (amount--) {
-    res = '0' + res;
+module.exports = function pad(str, num, ch) {
+  ch = ch || ' ';
+
+  while (num--) {
+    str = ch + str;
   }
-  return res;
+
+  return str;
 };
