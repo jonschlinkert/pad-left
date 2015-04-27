@@ -1,7 +1,7 @@
 {
   "name": "pad-left",
   "description": "Left pad a string with zeros or a specified string. Fastest implementation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/jonschlinkert/pad-left",
   "author": {
     "name": "Jon Schlinkert",
