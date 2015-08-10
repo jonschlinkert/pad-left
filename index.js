@@ -11,5 +11,5 @@ var repeat = require('repeat-string');
 
 module.exports = function padLeft(str, num, ch) {
   ch = typeof ch !== 'undefined' ? (ch + '') : ' ';
-  return repeat(ch, num) + str;
+  return repeat(ch, num - str.length) + str;
 };
