@@ -1,7 +1,7 @@
 {
   "name": "pad-left",
   "description": "Left pad a string with zeros or a specified string. Fastest implementation.",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "homepage": "https://github.com/jonschlinkert/pad-left",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/pad-left",
@@ -20,7 +20,6 @@
     "test": "mocha"
   },
   "dependencies": {
-    "mocha": "^2.4.5",
     "repeat-string": "^1.5.4"
   },
   "devDependencies": {
@@ -29,6 +28,7 @@
     "gulp-format-md": "^0.1.7",
     "left-pad": "^1.0.1",
     "matched": "^0.4.1",
+    "mocha": "^2.4.5",
     "should": "^8.2.2"
   },
   "keywords": [
@@ -63,6 +63,7 @@
       "gulp-format-md"
     ],
     "related": {
+      "highlight": "word-wrap",
       "list": [
         "align-text",
         "center-align",
