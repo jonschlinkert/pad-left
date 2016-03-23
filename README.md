@@ -1,13 +1,13 @@
-# pad-left [![NPM version](https://badge.fury.io/js/pad-left.svg)](http://badge.fury.io/js/pad-left)
+# pad-left [![NPM version](https://img.shields.io/npm/v/pad-left.svg)](https://www.npmjs.com/package/pad-left) [![Build Status](https://img.shields.io/travis/jonschlinkert/pad-left.svg)](https://travis-ci.org/jonschlinkert/pad-left)
 
 > Left pad a string with zeros or a specified string. Fastest implementation.
 
-## Intall
+## Install
 
-Install with [npm](https://www.npmjs.com/)
+Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm i pad-left --save
+$ npm install pad-left --save
 ```
 
 ## Usage
@@ -19,44 +19,58 @@ pad( '35', 4, '0') // 0035
 pad('459', 4, '0') // 0459
 ```
 
-## Related
+## Related projects
 
-* [align-text](https://github.com/jonschlinkert/align-text): Align the text in a string.
-* [center-align](https://github.com/jonschlinkert/center-align): Center-align the text in a string.
-* [justified](https://github.com/jonschlinkert/justified): Wrap words to a specified length and justified the text.
-* [pad-right](https://github.com/jonschlinkert/pad-right): Right pad a string with zeros or a specified string. Fastest implementation.
-* [repeat-string](https://github.com/jonschlinkert/repeat-string): Repeat the given string n times. Fastest implementation for repeating a string.
-* [right-align](https://github.com/jonschlinkert/right-align): Right-align the text in a string.
-* [right-align-keys](https://github.com/jonschlinkert/right-align-keys): Right align the keys of an object.
-* [right-align-values](https://github.com/jonschlinkert/right-align-values): Right align the values of a given property for each object in an array. Useful… [more](https://github.com/jonschlinkert/right-align-values)
-* [right-pad-keys](https://github.com/jonschlinkert/right-pad-keys): Right pad the keys of an object.
-* [right-pad-values](https://github.com/jonschlinkert/right-pad-values): Right pad the values of a given property for each object in an array. Useful… [more](https://github.com/jonschlinkert/right-pad-values)
-* [word-wrap](https://github.com/jonschlinkert/word-wrap): Wrap words to a specified length.
+* [align-text](https://www.npmjs.com/package/align-text): Align the text in a string. | [homepage](https://github.com/jonschlinkert/align-text)
+* [center-align](https://www.npmjs.com/package/center-align): Center-align the text in a string. | [homepage](https://github.com/jonschlinkert/center-align)
+* [justified](https://www.npmjs.com/package/justified): Wrap words to a specified length and justified the text. | [homepage](https://github.com/jonschlinkert/justified)
+* [pad-right](https://www.npmjs.com/package/pad-right): Right pad a string with zeros or a specified string. Fastest implementation. | [homepage](https://github.com/jonschlinkert/pad-right)
+* [repeat-string](https://www.npmjs.com/package/repeat-string): Repeat the given string n times. Fastest implementation for repeating a string. | [homepage](https://github.com/jonschlinkert/repeat-string)
+* [right-align](https://www.npmjs.com/package/right-align): Right-align the text in a string. | [homepage](https://github.com/jonschlinkert/right-align)
+* [right-align-keys](https://www.npmjs.com/package/right-align-keys): Right align the keys of an object. | [homepage](https://github.com/jonschlinkert/right-align-keys)
+* [right-align-values](https://www.npmjs.com/package/right-align-values): Right align the values of a given property for each object in an array. Useful… [more](https://www.npmjs.com/package/right-align-values) | [homepage](https://github.com/jonschlinkert/right-align-values)
+* [right-pad-keys](https://www.npmjs.com/package/right-pad-keys): Right pad the keys of an object. | [homepage](https://github.com/jonschlinkert/right-pad-keys)
+* [right-pad-values](https://www.npmjs.com/package/right-pad-values): Right pad the values of a given property for each object in an array. Useful… [more](https://www.npmjs.com/package/right-pad-values) | [homepage](https://github.com/jonschlinkert/right-pad-values)
+* [word-wrap](https://www.npmjs.com/package/word-wrap): Wrap words to a specified length. | [homepage](https://github.com/jonschlinkert/word-wrap)
+
+## Contributing
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/pad-left/issues/new).
+
+## Building docs
+
+Generate readme and API documentation with [verb](https://github.com/verbose/verb):
+
+```sh
+$ npm install verb && npm run docs
+```
+
+Or, if [verb](https://github.com/verbose/verb) is installed globally:
+
+```sh
+$ verb
+```
 
 ## Running tests
 
 Install dev dependencies:
 
 ```sh
-$ npm i -d && npm test
+$ npm install -d && npm test
 ```
-
-## Contributing
-
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/pad-left/issues/new)
 
 ## Author
 
 **Jon Schlinkert**
 
-+ [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
+* [github/jonschlinkert](https://github.com/jonschlinkert)
+* [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 ## License
 
-Copyright © 2014-2015 Jon Schlinkert
-Released under the MIT license.
+Copyright © 2016 [Jon Schlinkert](https://github.com/jonschlinkert)
+Released under the [MIT license](https://github.com/jonschlinkert/pad-left/blob/master/LICENSE).
 
 ***
 
-_This file was generated by [verb-cli](https://github.com/assemble/verb-cli) on August 11, 2015._
+_This file was generated by [verb](https://github.com/verbose/verb), v0.9.0, on March 22, 2016._
