@@ -7,7 +7,8 @@
 
 'use strict';
 
-var should = require('should');
+require('mocha');
+require('should');
 var pad = require('./');
 
 describe('pad left', function() {
@@ -30,7 +31,7 @@ describe('pad left', function() {
     pad(str, 100, '~').should.equal('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~abcde');
     pad(str, 300, '~').should.equal('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~abcde');
   });
-  
+
   it('should coerce number to string before padding.', function() {
     pad(123).should.equal('123');
     pad(123, 5).should.equal('  123');
