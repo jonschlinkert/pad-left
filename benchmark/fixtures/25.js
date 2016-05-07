@@ -1,3 +1,3 @@
 
 
-module.exports = ['5', 25, '~'];
+module.exports = ['xyz', 25];

@@ -1,4 +1,4 @@
 
 
-module.exports = ['5', 200, '~'];
+module.exports = ['xyz', 200];
 

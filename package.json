@@ -23,7 +23,7 @@
     "repeat-string": "^1.5.4"
   },
   "devDependencies": {
-    "benchmarked": "^0.2.4",
+    "benchmarked": "^0.2.5",
     "gulp-format-md": "^0.1.9",
     "left-pad": "^1.0.2",
     "minimist": "^1.2.0",
