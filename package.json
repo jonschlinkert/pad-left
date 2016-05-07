@@ -23,13 +23,12 @@
     "repeat-string": "^1.5.4"
   },
   "devDependencies": {
-    "ansi-colors": "^0.1.0",
-    "benchmarked": "^0.1.5",
-    "gulp-format-md": "^0.1.7",
-    "left-pad": "^1.0.1",
-    "matched": "^0.4.1",
+    "benchmarked": "^0.2.4",
+    "gulp-format-md": "^0.1.9",
+    "left-pad": "^1.0.2",
+    "minimist": "^1.2.0",
     "mocha": "^2.4.5",
-    "should": "^8.2.2"
+    "should": "^8.3.1"
   },
   "keywords": [
     "align",
