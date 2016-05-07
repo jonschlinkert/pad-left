@@ -10,7 +10,19 @@
 var repeat = require('repeat-string');
 
 module.exports = function padLeft(str, num, ch) {
-  ch = typeof ch !== 'undefined' ? (ch + '') : ' ';
-  if (typeof str !== 'string') str = str + '';
+  str = str.toString();
+
+  if (typeof num === 'undefined') {
+    return str;
+  }
+
+  if (ch === 0) {
+    ch = '0';
+  } else if (ch) {
+    ch = ch.toString();
+  } else {
+    ch = ' ';
+  }
+
   return repeat(ch, num - str.length) + str;
 };
