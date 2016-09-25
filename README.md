@@ -23,56 +23,33 @@ pad('459', 4, '0') // 0459
 
 ## Benchmarks
 
-Benchmarks for node.js v6.1.0 versus [left-pad](https://github.com/stevemao/left-pad).
+Benchmarks for node.js v6.5.0 versus [left-pad](https://github.com/stevemao/left-pad).
 
 ```sh
 # benchmark/fixtures/10-custom-char.js (37 bytes)
-  pad-left x 14,940,947 ops/sec ±0.81% (87 runs sampled)
-  left-pad x 7,901,604 ops/sec ±1.17% (86 runs sampled)
+  pad-left x 14,660,838 ops/sec ±1.43% (84 runs sampled)
+  left-pad x 9,189,792 ops/sec ±1.36% (81 runs sampled)
 
 # benchmark/fixtures/10.js (32 bytes)
-  pad-left x 13,305,123 ops/sec ±1.53% (84 runs sampled)
-  left-pad x 6,979,536 ops/sec ±1.13% (84 runs sampled)
+  pad-left x 13,357,570 ops/sec ±1.91% (84 runs sampled)
+  left-pad x 20,375,277 ops/sec ±1.40% (82 runs sampled)
 
 # benchmark/fixtures/100-custom-char.js (38 bytes)
-  pad-left x 14,227,637 ops/sec ±1.41% (81 runs sampled)
-  left-pad x 1,352,240 ops/sec ±1.51% (86 runs sampled)
+  pad-left x 13,671,301 ops/sec ±1.58% (83 runs sampled)
+  left-pad x 8,917,004 ops/sec ±1.84% (79 runs sampled)
 
 # benchmark/fixtures/100.js (34 bytes)
-  pad-left x 15,664,561 ops/sec ±0.99% (83 runs sampled)
-  left-pad x 1,247,316 ops/sec ±0.96% (87 runs sampled)
+  pad-left x 15,442,944 ops/sec ±1.68% (81 runs sampled)
+  left-pad x 7,850,636 ops/sec ±1.47% (83 runs sampled)
 
 # benchmark/fixtures/1000-custom-char.js (40 bytes)
-  pad-left x 15,210,294 ops/sec ±1.15% (87 runs sampled)
-  left-pad x 159,958 ops/sec ±1.01% (88 runs sampled)
+  pad-left x 13,624,072 ops/sec ±1.25% (84 runs sampled)
+  left-pad x 5,907,915 ops/sec ±1.13% (86 runs sampled)
 
 # benchmark/fixtures/1000.js (35 bytes)
-  pad-left x 14,157,425 ops/sec ±1.10% (88 runs sampled)
-  left-pad x 143,805 ops/sec ±1.08% (87 runs sampled)
-```
+  pad-left x 14,241,788 ops/sec ±1.23% (81 runs sampled)
+  left-pad x 5,418,351 ops/sec ±1.52% (80 runs sampled)
 
-Benchmarks for node.js v6.1.0 versus [stevemao/left-pad](https://github.com/stevemao/left-pad).
-
-```sh
-# benchmark/fixtures/10-custom-char.js (37 bytes)
-  pad-left x 13,251,037 ops/sec ±1.40% (84 runs sampled)
-  left-pad x 10,745,530 ops/sec ±1.18% (86 runs sampled)
-
-# benchmark/fixtures/10.js (32 bytes)
-  pad-left x 13,644,357 ops/sec ±1.33% (87 runs sampled)
-  left-pad x 20,107,245 ops/sec ±1.00% (88 runs sampled)
-
-# benchmark/fixtures/100-custom-char.js (38 bytes)
-  pad-left x 15,650,330 ops/sec ±1.01% (86 runs sampled)
-  left-pad x 9,706,877 ops/sec ±1.13% (87 runs sampled)
-
-# benchmark/fixtures/1000-custom-char.js (40 bytes)
-  pad-left x 17,255,593 ops/sec ±0.99% (88 runs sampled)
-  left-pad x 6,312,637 ops/sec ±1.16% (87 runs sampled)
-
-# benchmark/fixtures/1000.js (35 bytes)
-  pad-left x 15,679,410 ops/sec ±0.99% (90 runs sampled)
-  left-pad x 6,439,580 ops/sec ±1.08% (86 runs sampled)
 ```
 
 ## Related projects
