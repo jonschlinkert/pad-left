@@ -1,28 +1,21 @@
-/*!
- * pad-left <https://github.com/jonschlinkert/pad-left>
- *
- * Copyright (c) 2014-2015, Jon Schlinkert.
- * Licensed under the MIT license.
- */
-
 'use strict';
 
-var repeat = require('repeat-string');
+let repeat = require('repeat-string');
 
-module.exports = function padLeft(str, num, ch) {
-  str = str.toString();
-
-  if (typeof num === 'undefined') {
-    return str;
+module.exports = (string, num, ch = " ") => {
+  /* should be of string type */
+  if (typeof string !== "string") {
+    throw new Error(": argument 'string' needs to be of String type");
   }
-
-  if (ch === 0) {
-    ch = '0';
-  } else if (ch) {
-    ch = ch.toString();
-  } else {
-    ch = ' ';
+  /* should be of integer type */
+  else if (Number.isNaN(num) || !Number.isInteger(num)) {
+    throw new Error(": argument 'num' needs to be of Integer type");
   }
-
-  return repeat(ch, num - str.length) + str;
-};
+  /* should be of string type */
+  else if (typeof ch !== "string") {
+    throw new Error(": argument 'ch' needs to be of String type");
+  }
+  else {
+    return repeat(ch, num - string.length) + string;
+  }
+}
